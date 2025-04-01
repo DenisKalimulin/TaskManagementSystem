@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: TaskManager
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task_management_system_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+
+jwt:
+  secret: Qx7@92nKlT1vY6BcR0g1Z#s3LpMn!eHj
+  expiration: 3600000
+
+server:
+  port: 8080
